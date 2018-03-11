@@ -6,15 +6,19 @@
 
     <body>
         login
-        <div class="form-group">
-            <label for="inputsm">e-mail</label>
-            <input class="form-control input-sm" id="txtLoginEmail" type="text">
-        </div>
-        <div class="form-group">
-            <label for="inputdefault">password</label>
-            <input class="form-control" id="txtLoginPassword" type="text">
-        </div>
-        <button class="ui-button ui-widget ui-corner-all" id="btnLogin">Login</button>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input id="txtLoginEmail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">example@email.com</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input id="txtLoginPassword" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button id="btnLogin"  type="submit" class="btn btn-primary">Login</button>
+        </form>
+        
 
         <script>
             jQuery( "#btnLogin" ).click(function() {
