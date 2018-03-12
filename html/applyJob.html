@@ -1,56 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-    </head>
 
-    <body>
-        รับงานสอน
+<head>
+
+</head>
+
+<body>
+  รับงานสอน
 
 
-        <!--<ul id="tabApplyJob" class="nav nav-tabs">
+  <!--<ul id="tabApplyJob" class="nav nav-tabs">
           <li class="active"><a data-toggle="tab" id="one">Tab One</a></li>
           <li><a data-toggle="tab" id="two">Tab Two</a></li>
           <li><a data-toggle="tab" id="three">Tab Three</a></li>
         </ul>
         <div id="divApplyJobContainer" class="container">
         </div>-->
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">วิชาและระดับชั้น:</label>
-            <input class="form-control">
-          </div>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">วิชาและระดับชั้น:</label>
+      <input class="form-control">
+    </div>
 
-          <div class="form-group">
-            <label for="exampleSelect1">ประสบการณ์สอน</label>
-            <select class="form-control" id="exampleSelect1">
-              <option>6 เดือน </option>
-              <option>1 ปี</option>
-              <option>2 ปี</option>
-            </select>
-          </div>
+    <div class="form-group">
+      <label for="exampleSelect1">ประสบการณ์สอน</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>6 เดือน </option>
+        <option>1 ปี</option>
+        <option>2 ปี</option>
+      </select>
+    </div>
 
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">ปกติ
-              <input type="checkbox" class="form-check-input">English Program
-              <input type="checkbox" class="form-check-input">International
-            </label>
-          </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input">ปกติ
+        <input type="checkbox" class="form-check-input">English Program
+        <input type="checkbox" class="form-check-input">International
+      </label>
+    </div>
 
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input class="form-control">
-          </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input class="form-control">
+    </div>
 
-          <div class="form-group"> วันและเวลาที่สามารถสอนได้
-            <label for="example-datetime-local-input" class="col-2 col-form-label">เวลาสอน</label>
-            <div class="col-10">
-              <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-            </div>
-          </div>
 
-          <div class="form-group">
+
+    <div class="container">
+      <!--Monday-->
+      <div class="applyjob-teachable-day">วันจันทร์</div>
+      <div class="applyjob-teachable-time">
+        <div class="col-sm">
+          <label for="example-datetime-local-input" class="col-2 col-form-label">เวลาเริ่ม</label>
+          <div class="col-10">
+            <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+          </div>
+          <label for="example-datetime-local-input" class="col-2 col-form-label">เวลาสิ้นสุด</label>
+          <div class="col-10">
+            <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+          </div>
+        </div>
+      </div>
+      <div class="applyjob-teachable-place">
+        <div class="col-sm">
+          <label for="example-datetime-local-input" class="col-2 col-form-label">สถนที่แรก</label>
+          <div class="col-10">
+            <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+          </div>
+          <label for="example-datetime-local-input" class="col-2 col-form-label">สถนที่สุดท้าย</label>
+          <div class="col-10">
+            <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--Monday-->
+      <div class="applyjob-teachable-day">วันอังคาร</div>
+      <div class="applyjob-teachable-time">
+        <div>
+          <label for="example-datetime-local-input" class="col-2 col-form-label">เวลาเริ่ม</label>
+          <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+        </div>
+        <div>
+          <label for="example-datetime-local-input" class="col-2 col-form-label">เวลาสิ้นสุด</label>
+          <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+        </div>
+      </div>
+      <div class="applyjob-teachable-place">
+        <div class="col-sm">
+          <label for="example-datetime-local-input" class="col-2 col-form-label">สถนที่แรก</label>
+          <div class="col-10">
+            <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+          </div>
+          <label for="example-datetime-local-input" class="col-2 col-form-label">สถนที่สุดท้าย</label>
+          <div class="col-10">
+            <input class="form-control" type="time" value="00:00:00" id="example-datetime-local-input">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--<div class="form-group">
             <label for="exampleSelect2">Example multiple select</label>
             <select multiple class="form-control" id="exampleSelect2">
               <option>1</option>
@@ -89,18 +143,19 @@
                 Option three is disabled
               </label>
             </div>
-          </fieldset>
+          </fieldset>-->
 
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
-        <script>
+  <script>
           /**jQuery('a[data-toggle=tab]').click(function(){
             alert(this.id);
           });**/
 
-          
 
-        </script>
-    </body>
+
+  </script>
+</body>
+
 </html>
